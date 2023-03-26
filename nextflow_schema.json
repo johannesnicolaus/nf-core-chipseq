@@ -592,5 +592,15 @@
         {
             "$ref": "#/definitions/generic_options"
         }
-    ]
+    ],
+    "properties": {
+        "no_model": {
+            "type": "string",
+            "default": "false"
+        },
+        "ext_size": {
+            "type": "string",
+            "default": null
+        }
+    }
 }
