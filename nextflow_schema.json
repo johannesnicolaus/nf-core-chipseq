@@ -320,7 +320,18 @@
                     "type": "boolean",
                     "description": "Skip consensus peak generation, annotation and counting.",
                     "fa_icon": "fas fa-fast-forward"
-                }
+                },
+
+                "no_model": {
+                    "type": "boolean",
+                    "description": "Bypass building the shifting model by MACS2.",
+                    "default": "false"
+                },
+                "extsize": {
+                    "type": "integer",
+                    "description": "While --nomodel is set, MACS2 uses this parameter to extend reads in 5'->3' direction to fix-sized fragments.",
+                    "default": null
+                
             }
         },
         "process_skipping_options": {
